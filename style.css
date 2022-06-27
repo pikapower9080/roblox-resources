@@ -1,0 +1,59 @@
+@import url("prism.css");
+
+:root{
+    --columns: repeat(10, 1fr);
+    --cell-size: 50px;
+    --cell-radius: 12px;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: sans-serif;
+    display: grid;
+}
+.cell {
+    border-radius: 8px;
+    transition: background-color;
+    transition-duration: 100ms;
+}
+.cell img {
+    width: 90px;
+}
+.cell {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+}
+.cell:hover {
+    background-color: rgb(41, 40, 40);
+    cursor: pointer;
+}
+.cell:hover .tooltip {
+    display: unset;
+}
+.tooltip {
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    padding: 6px;
+    max-width: 150px;
+    margin-left: 20px;
+    display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: var(--columns);
+}
+pre {
+    max-width: 50vw;
+    overflow-x: scroll;
+}
+#copyUrlContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 4px;
+}

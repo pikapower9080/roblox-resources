@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Resource Viewer</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Roblox Resource Viewer</h1>
+    <div id="copyUrlContainer"><input id="copyAssetUrl" type="checkbox"><label for="copyAssetUrl">Copy Asset Url (with rbxassetid://)</label></div>
+    <h2>Click an image to copy it's ID.</h2><h3>Some textures require certain conditions like base part materials. Hover over them for more info.</h3>
+    <h3>This is an early demo! New features and more textures to come!</h3>
+    <h2>Textures</h2>
+    <div id="textures" class="grid"></div>
+    <h2>Misc</h2>
+    <div id="misc" class="grid"></div>
+    <details>
+        <summary style="font-weight: bold; font-size: larger;">Spiral Gif</summary>
+        <div id="spiralgif" class="grid"></div>
+        <p>For this to work in game, use the following script inside of an ImageLabel:</p>
+        <!-- PrismJS -->
+        <details><summary>Show Code</summary>
+            <pre class="language-lua" tabindex="0"><code class="language-lua"><span class="token keyword">local</span> frames <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"rbxassetid://9231227426"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227484"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227553"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227629"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227765"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227851"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231227936"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231228039"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231228112"</span><span class="token punctuation">,</span><span class="token string">"rbxassetid://9231228204"</span><span class="token punctuation">}</span>
+
+<span class="token keyword">while</span> <span class="token keyword">true</span> <span class="token keyword">do</span>
+    <span class="token keyword">for</span> _<span class="token punctuation">,</span>frame <span class="token keyword">in</span> <span class="token function">pairs</span><span class="token punctuation">(</span>frames<span class="token punctuation">)</span> <span class="token keyword">do</span>
+        script<span class="token punctuation">.</span>Parent<span class="token punctuation">.</span>Image <span class="token operator">=</span> frame
+        <span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">0.04</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span></code></pre>
+    </details></details>
+    <script src="load.js"></script>
+</body>
+</html>
