@@ -57,3 +57,18 @@ pre {
     background-color: rgb(24, 24, 24);
     border-radius: 4px;
 }
+.navlink {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.currentnav {
+    color: rgb(215, 215, 215);
+}
+.navlink:hover {
+    background-color: rgb(30, 30, 30);
+}
+#nav {
+    margin: 0px;
+}

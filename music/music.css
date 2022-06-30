@@ -1,0 +1,49 @@
+.preview {
+    height: 35px;
+    margin-left: 15px;
+    width: 35%;
+    color-scheme: dark;
+}
+.track {
+    outline: 1px rgba(255, 255, 255, 0.5) solid;
+    padding: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.track {
+    background-image: url("../images/audio.png");
+    background-repeat: no-repeat;
+    background-size: 45px;
+}
+.track:hover {
+    background-color: rgb(30, 30, 30);
+}
+.audioName {
+    line-height: 0px;
+}
+a {
+    margin-left: 6px;
+    color: rgb(93, 141, 157);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.audioName::after {
+    content: " - ";
+}
+.navlink {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.currentnav {
+    color: rgb(215, 215, 215);
+}
+.navlink:hover {
+    background-color: rgb(30, 30, 30);
+}
+#nav {
+    margin: 0px;
+}

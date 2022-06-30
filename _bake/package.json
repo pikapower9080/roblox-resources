@@ -1,0 +1,15 @@
+{
+  "name": "bake",
+  "version": "1.0.0",
+  "description": "Bakes audio data so requests don't have to be made Roblox each time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "pikapower9080",
+  "license": "ISC",
+  "dependencies": {
+    "noblox.js": "^4.13.1"
+  }
+}

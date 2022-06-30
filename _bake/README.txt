@@ -1,0 +1,1 @@
+This node.js script bakes data for audio into static HTML, so a million requests don't have to be made to Roblox's api, causing the page to load faster.
