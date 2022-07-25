@@ -3,7 +3,6 @@ const lists = document.getElementsByClassName("list")
 function copy(text) {
     if ('clipboard' in navigator) {
         navigator.clipboard.writeText(text)
-        alert("Copied!")
     } else {
         console.warn("Browser does not support clipboard API, using textarea method.")
         let textarea = document.createElement("textarea")
