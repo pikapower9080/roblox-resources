@@ -12,7 +12,6 @@ function copy(text) {
         textarea.select()
         document.execCommand("copy")
         textarea.remove()
-        alert("Copied!")
     }
 }
 
@@ -52,6 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
             copyLink.addEventListener("click", () => {
                 let copyAssetUrl = document.getElementById("copyAssetUrl").checked
                 copy(copyAssetUrl == true ? `rbxassetid://${element.id}` : element.id)
+                copyLink.innerHTML = "Copied!"
+                setTimeout(() => {
+                    copyLink.innerHTML = "Copy ID"
+                }, 2000);
             })
         }
     }
