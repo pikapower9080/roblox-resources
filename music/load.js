@@ -26,26 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (typeof element != "object") { continue }
             const previewLoad = element.getElementsByClassName("previewLoad")[0]
             const copyLink = element.getElementsByClassName("copy")[0]
-            previewLoad.addEventListener("click", () => {
-                if (previewLoad.style.display == "none") { return }
-                previewLoad.style.display = "none"
-                const audioPreview = document.createElement("audio")
-                audioPreview.src = `https://api.hyra.io/audio/${element.id}`
-                audioPreview.classList.add("preview")
-                audioPreview.controls = true
-                audioPreview.autoplay = true
-                audioPreview.setAttribute("controlsList", "nodownload")
-                try {
-                    audioPreview.addEventListener("play", () => {
-                        const audioElements = document.getElementsByTagName("audio")
-                        for (c in audioElements) {
-                            if (audioElements[c] != audioPreview) {
-                                audioElements[c].pause() // Pause other previews when you play one of them
-                            }
-                        }
-                    })
-                } catch(e) {}
-                element.insertBefore(audioPreview, copyLink)
+            previewLoad.addEventListener("click", async () => {
+                window.open(`https://create.roblox.com/store/asset/${element.id}/`, "_blank")
             })
             copyLink.addEventListener("click", () => {
                 let copyAssetUrl = document.getElementById("copyAssetUrl").checked

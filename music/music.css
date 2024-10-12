@@ -5,12 +5,16 @@
     color-scheme: dark;
 }
 .track {
-    outline: 1px rgba(255, 255, 255, 0.5) solid;
+    border: 1px rgba(255, 255, 255, 0.294) solid;
+    border-bottom: none;
     padding: 5px;
     height: 35px;
     display: flex;
     align-items: center;
     padding-left: 50px;
+}
+.track:last-child {
+    border-bottom: 1px rgba(255, 255, 255, 0.294) solid;
 }
 .track {
     background-image: url("../images/audio.png");

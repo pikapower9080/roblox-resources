@@ -1,5 +1,3 @@
 # Roblox Resources
 
-Helpful resources for your roblox games!
-
-Roblox resources is a site that includes textures, materials, and more for use in your roblox games. All you have to do is click to copy an id!
+Roblox Resources is a hand-picked collection of licensed music for use in Roblox games.

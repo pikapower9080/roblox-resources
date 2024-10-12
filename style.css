@@ -1,5 +1,3 @@
-@import url("prism.css");
-
 :root{
     --columns: repeat(10, 1fr);
     --cell-size: 50px;
